@@ -29,7 +29,7 @@ public class Cheat_Activity extends AppCompatActivity {
         if(foo==2 ||foo==3){
             addedtext.setText("It is a prime number");
         }
-        for (int i = 4; i < sqrt; i++) {
+        for (int i = 2; i < sqrt; i++) {
             if (foo % i == 0) {
                 addedtext.setText("Is not a prime number");
                 break;

@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         if(number ==2 || number ==3){
             return 1;
         }
-        for (int i = 4; i < sqrt; i++) {
+        for (int i = 2; i < sqrt; i++) {
             if (number % i == 0) {
                 return 0;
             }
