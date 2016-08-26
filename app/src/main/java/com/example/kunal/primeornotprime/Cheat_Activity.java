@@ -23,10 +23,13 @@ public class Cheat_Activity extends AppCompatActivity {
         String a=getIntent().getExtras().getString("data");
         int foo=Integer.parseInt(a);
         int sqrt= (int)Math.sqrt(foo)+1;
-        if(foo== 1 || foo== 2){
+        if(foo== 1 ){
             addedtext.setText("Is not a prime number");
         }
-        for (int i = 3; i < sqrt; i++) {
+        if(foo==2 ||foo==3){
+            addedtext.setText("It is a prime number");
+        }
+        for (int i = 4; i < sqrt; i++) {
             if (foo % i == 0) {
                 addedtext.setText("Is not a prime number");
                 break;

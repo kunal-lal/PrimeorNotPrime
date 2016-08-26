@@ -41,10 +41,13 @@ public class MainActivity extends AppCompatActivity {
         EditText edited = (EditText) findViewById(R.id.editText);
         number = Integer.parseInt(edited.getText().toString());
         int sqrt= (int)Math.sqrt(number)+1;
-        if(number== 1 || number ==2){
+        if(number== 1 ){
             return 0;
         }
-        for (int i = 3; i < sqrt; i++) {
+        if(number ==2 || number ==3){
+            return 1;
+        }
+        for (int i = 4; i < sqrt; i++) {
             if (number % i == 0) {
                 return 0;
             }
